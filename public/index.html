@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+
+    <!--CSS Reset-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Menu Icons Link-->
+    <script src="https://kit.fontawesome.com/58d6b4a040.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Mobile Menu-->
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </header>
+
+    <!--Side Menu & Logo -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+          <div class="position-sticky pt-3">
+            <div class="sidebar-logo mt-4 mb-4">
+              <span class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+              </span>
+              <h3 class="sidebar-title">Dashboard Kit</h3>
+            </div>
+
+            <!--Menu List-->
+            <ul class="nav flex-column">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="fas fa-chart-pie"></i> Overview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-ticket-alt"></i> Tickets
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-lightbulb"></i> Ideas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-users"></i> Contacts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-user-tie"></i> Agents
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-book"></i> Articles
+                </a>
+              </li>
+            </ul>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-cog"></i> Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-award"></i> Subscription
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!--Top-->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-main pb-4">
+          <div class="row pt-3 pb-2 mb-3">
+            <h1 class="col-12 col-md-8 title"> Overview </h1>
+            <div class="col-12 col-md-4 mb-2 mb-md-0 d-flex justify-content-end align-items-center">
+              <i class="fas fa-search nameJones"></i>
+              <i class="fas fa-bell icon-alert nameJones"></i>
+              <div class="nameJones">
+                <span>Jones Ferdinand</span>
+                <img id="profile" src="assets/images/profile.png" alt="User Persona">
+              </div>
+            </div>
+          </div>
+
+          <!--Top List-->
+          <section class="row">
+            <div class="col-12 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <p>Unresolved</p>
+                  <h2>60</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <p>Overdue</p>
+                  <h2>16</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <p>Open</p>
+                  <h2>43</h2>
+                </div>
+              </div>
+            </div>
+            <div class="ccol-12 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <p>On hold</p>
+                  <h2>64</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Chart-->
+          <section class="card mt-3 mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <h2 class="subtitle">Today’s trends</h2>
+                  <div class="row">
+                    <span class="col-8">as of 25 May 2019, 09:41 PM</span>
+                    <div class="legend col-4">
+                      <img src="assets/images/date.png" alt="Graph date">
+                    </div>
+                  </div>
+                  <span class="full-graph">
+                    <img src="assets/images/chart.png" alt="Full Graph">
+                  </span>
+                </div>
+
+                <!--Chart List-->
+                <section class="border col-md-4">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p>Resolved</p>
+                      <h3>449</h3>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Received</p>
+                      <h3>426</h3>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Average first response time</p>
+                      <h3>33m</h3>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Average response time</p>
+                      <h3>3h 8m</h3>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Resolution within SLA</p>
+                      <h3>94%</h3>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </section>
+
+          <!--Bottom List 1-->
+          <div class="row">
+            <div class="col-md-6">
+              <section class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="subtitle">Unresolved tickets</h3>
+                    <a href="#">View details</a>
+                  </div>
+                  <span class="col-8">Group:</span><span class="support">Support</span>
+                  <ul id="tickets" class="list-group list-group-flush mt-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> Waiting on Feature
+                      Request
+                      <span>4238</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> Awaiting Customer
+                      Response
+                      <span>1005</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> Awaiting Developer Fix
+                      <span>914</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> Pending
+                      <span>281</span>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <!--Bottom List 2-->
+            <div class="col-md-6">
+              <section class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="subtitle">Tasks</h3>
+                    <a href="#">View all</a>
+                  </div>
+                  <span class="col-8 subtitle-detail">Today</span>
+                  <ul class="list-group list-group-flush mt-3">
+                    <li id="newtask"
+                      class="list-group-item color-ligh-gray d-flex justify-content-between align-items-center">
+                      <span>Create new task</span>
+                      <button type="button" class="btn btn-light">+</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox"> Finish ticket update
+                      </div>
+                      <span class="badge bg-warning text-light uppercase">Urgent</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox"> Create new ticket example
+                      </div>
+                      <span class="badge bg-success uppercase">New</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox" checked> Update ticket report
+                      </div>
+                      <span class="badge bg-light text-dark uppercase">Default</span>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+
+    <!--Full Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
+
+  </body>
+</html>
